@@ -1,0 +1,86 @@
+﻿@model ozo.Models.ViewNajam
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Najam</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NajamId" />
+            <div class="form-group">
+                <label asp-for="Kolicina" class="control-label"></label>
+                <input asp-for="Kolicina" class="form-control" />
+                <span asp-validation-for="Kolicina" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Cijena" class="control-label"></label>
+                <input asp-for="Cijena" class="form-control" />
+                <span asp-validation-for="Cijena" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Opis" class="control-label"></label>
+                <input asp-for="Opis" class="form-control" />
+                <span asp-validation-for="Opis" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DatumOd" class="control-label">Datum od</label>
+                <input asp-for="DatumOd" class="form-control" />
+                <span asp-validation-for="DatumOd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DatumDo" class="control-label">Datum do</label>
+                <input asp-for="DatumDo" class="form-control" />
+                <span asp-validation-for="DatumDo" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label asp-for="VrstaNajmaId">Vrsta najam</label>
+                <div><span asp-validation-for="VrstaNajmaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="VrstaNajmaId" asp-items="ViewBag.NajamList">
+                    <option disabled selected value="">Odaberit najam</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+
+                <label asp-for="FimraId">Fimra </label>
+                <div><span asp-validation-for="FimraId" class="text-danger" /></div>
+                <select class="form-control" asp-for="FimraId" asp-items="ViewBag.FirmaList">
+                    <option disabled selected value="">Odaberit najam</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label asp-for="OpremaId">Oprema</label>
+                <div><span asp-validation-for="OpremaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="OpremaId" asp-items="ViewBag.OpremaList">
+                    <option disabled selected value="">Odaberit najam</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Spremi" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Nazad na listu</a>
+</div>
+

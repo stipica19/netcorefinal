@@ -1,0 +1,27 @@
+2019-06-10 13:42:34.6657|0|ozo.Controllers.OsobaController|INFO|  Usluga 31 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:49:58.7641|0|ozo.Controllers.OsobaController|INFO|  Usluga 32 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:50:41.4204|0|ozo.Controllers.OsobaController|INFO|  Usluga 33 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:53:14.9500|0|ozo.Controllers.OsobaController|INFO|  Usluga 34 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:54:10.2341|0|ozo.Controllers.OsobaController|INFO|  Usluga 35 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:55:02.6269|0|ozo.Controllers.OsobaController|ERROR|  Pogreška prilikom dodavanje nove usluge: An error occurred while updating the entries. See the inner exception for details.
+String or binary data would be truncated.
+The statement has been terminated.
+ |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:55:16.8432|0|ozo.Controllers.OsobaController|ERROR|  Pogreška prilikom dodavanje nove usluge: An error occurred while updating the entries. See the inner exception for details.
+String or binary data would be truncated.
+The statement has been terminated.
+ |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 13:55:27.1280|0|ozo.Controllers.OsobaController|INFO|  Usluga 38 dodan. |url: https://localhost/Usluga/Create?|action: Create
+2019-06-10 14:01:27.0176|0|ozo.Controllers.NatjecajController|INFO|  Natjecaj 9 dodan. |url: https://localhost/Natjecaj/Create?|action: Create
+2019-06-10 14:04:09.4865|0|ozo.Controllers.NatjecajController|INFO|  Natjecaj Dodjela stipendije za radnike poduzeca dodan. |url: https://localhost/Natjecaj/Create?|action: Create
+2019-06-10 14:15:21.3094|0|ozo.Controllers.OpremaController|INFO|  oprema Oprema za snimanje dodan. |url: https://localhost/Oprema/Create?|action: Create
+2019-06-10 14:16:11.4989|0|ozo.Controllers.PosaoController|INFO|  Posao 44 dodan. |url: https://localhost/Posao/Create?|action: Create
+2019-06-10 14:20:59.3462|0|ozo.Controllers.OsobaController|INFO|  Osoba zelja dodana. |url: https://localhost/Osoba/Create?|action: Create
+2019-06-10 14:21:06.5165|0|ozo.Controllers.OsobaController|INFO|  oprema 74 uspješno obrisan. |url: https://localhost/Osoba/Delete?|action: Delete
+2019-06-10 14:21:45.5642|0|ozo.Controllers.OsobaController|INFO|  Osoba ante dodana. |url: https://localhost/Osoba/Create?|action: Create
+2019-06-10 17:38:09.4569|0|ozo.Controllers.NatjecajController|INFO|  Natjecaj Nabavka opreme za fotografiranje dodan. |url: https://localhost/Natjecaj/Create?|action: Create
+2019-06-10 17:57:08.8122|0|ozo.Controllers.PosaoController|INFO|  Posao 15 uspješno obrisan. |url: https://localhost/posao/Delete?|action: Delete
+2019-06-10 17:57:23.8645|0|ozo.Controllers.PosaoController|INFO|  Posao 40 uspješno obrisan. |url: https://localhost/posao/Delete?|action: Delete
+2019-06-10 17:58:02.2352|0|ozo.Controllers.PosaoController|INFO|  Posao 35 uspješno obrisan. |url: https://localhost/Posao/Delete?|action: Delete
+2019-06-10 17:58:26.2776|0|ozo.Controllers.PosaoController|INFO|  Posao 39 uspješno obrisan. |url: https://localhost/Posao/Delete?|action: Delete
+2019-06-10 17:58:37.8715|0|ozo.Controllers.PosaoController|INFO|  Posao 42 uspješno obrisan. |url: https://localhost/Posao/Delete?|action: Delete

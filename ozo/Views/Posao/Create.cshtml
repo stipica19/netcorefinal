@@ -1,0 +1,72 @@
+﻿@model ozo.Models.ViewPosao
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Dodavanje novi posao</h1>
+<hr />
+
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Opis" class="control-label"></label>
+                <input asp-for="Opis" class="form-control" />
+                <span asp-validation-for="Opis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cijena" class="control-label"></label>
+                <input asp-for="Cijena" class="form-control" />
+                <span asp-validation-for="Cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DodatniTrosak" class="control-label">Dodatni trosak</label>
+                <input asp-for="DodatniTrosak" class="form-control" />
+                <span asp-validation-for="DodatniTrosak" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VrijemeOd" class="control-label">Vrijeme od</label>
+                <input asp-for="VrijemeOd" class="form-control" />
+                <span asp-validation-for="VrijemeOd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VrijemeDo" class="control-label">Vrijeme do</label>
+                <input asp-for="VrijemeDo" class="form-control" />
+                <span asp-validation-for="VrijemeDo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UslugaId">Usluga</label>
+                <div><span asp-validation-for="UslugaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="UslugaId" asp-items="ViewBag.UslugaList">
+                    <option disabled selected value="">Odaberite uslugu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="KategorijaId">Kategorija</label>
+                <div><span asp-validation-for="KategorijaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="KategorijaId" asp-items="ViewBag.ZanimanjeList">
+                    <option disabled selected value="">Odaberite kategoriju</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="LokacijaPoslaId">Lokacija posla</label>
+                <div><span asp-validation-for="LokacijaPoslaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="LokacijaPoslaId" asp-items="ViewBag.LokacijaList">
+                    <option disabled selected value="">Odaberite lokaciju</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="OpremaId">Oprema</label>
+                <div><span asp-validation-for="OpremaId" class="text-danger" /></div>
+                <select class="form-control" asp-for="OpremaId" asp-items="ViewBag.OpremaList">
+                    <option disabled selected value="">Odaberite opremu</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg" type="submit"><span class="glyphicon glyphicon-plus"></span> Dodaj</button>
+                <a asp-action="" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove"></span> Odustani</a>
+            </div>
+        </form>
+<br/>
+<div class="text-center">
+    <a asp-action="Index">Nazad na listu</a>
+</div>
